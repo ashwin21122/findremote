@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindRemote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="brand">⌕ <span>FindRemote</span></div>
+    <p class="eyebrow">YOUR REMOTE, FOUND.</p>
+    <h1>Where did it<br>go this time?</h1>
+    <p class="intro">Connect to the small Bluetooth sensor attached to your remote, then make it beep.</p>
+
+    <section class="device-card">
+      <div class="device-icon">📺</div>
+      <div>
+        <h2>My TV Remote</h2>
+        <p id="connectionStatus" class="status disconnected">Not connected</p>
+      </div>
+      <span id="statusDot" class="dot"></span>
+    </section>
+
+    <button id="connectBtn" class="secondary">Connect to remote sensor</button>
+
+    <section class="finder">
+      <div class="sound-icon">♫</div>
+      <h2>Find your remote</h2>
+      <p id="helpText">Connect your FindRemote sensor to activate the finder.</p>
+      <button id="ringBtn" class="ring" disabled>🔔 Ring my remote</button>
+      <button id="stopBtn" class="stop" disabled>Stop sound</button>
+    </section>
+
+    <section class="location-card">
+      <h3>Last known location</h3>
+      <p id="locationText">Not set</p>
+      <div class="location-edit">
+        <input id="locationInput" type="text" placeholder="e.g. Living room sofa">
+        <button id="saveLocationBtn">Save</button>
+      </div>
+      <small>This is a label you enter yourself. Bluetooth connection alone cannot provide an exact room or map location.</small>
+    </section>
+
+    <p class="note">Prototype: ESP32 + buzzer + Bluetooth. Keep the sensor powered and within Bluetooth range.</p>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

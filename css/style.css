@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: #f7f8fc;
+  display: flex;
+  justify-content: center;
+  padding: 28px 16px;
+}
+.app { width: 100%; max-width: 470px; }
+.brand { font-size: 22px; font-weight: 800; color: #9ee7d2; }
+.brand span { color: #fff; }
+.eyebrow { margin: 42px 0 10px; color: #9ee7d2; letter-spacing: 3px; font-size: 11px; font-weight: bold; }
+h1 { font-size: 42px; line-height: 1.08; margin: 0; }
+.intro { color: #aeb9ca; line-height: 1.6; max-width: 390px; }
+.device-card, .finder, .location-card {
+  background: #1b2739;
+  border: 1px solid #2c3a50;
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 22px;
+}
+.device-card { display: flex; align-items: center; gap: 14px; }
+.device-icon { font-size: 30px; background: #293950; padding: 12px; border-radius: 14px; }
+.device-card h2, .finder h2 { margin: 0 0 7px; font-size: 18px; }
+.device-card p, .finder p { margin: 0; color: #aeb9ca; font-size: 14px; }
+.status.connected { color: #9ee7d2; }
+.status.disconnected { color: #ffb6a9; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: #ff806d; margin-left: auto; }
+.dot.on { background: #62e6b7; box-shadow: 0 0 12px #62e6b7; }
+button { border: 0; border-radius: 12px; padding: 14px 18px; font-size: 15px; font-weight: bold; cursor: pointer; }
+button:disabled { opacity: .4; cursor: not-allowed; }
+.secondary { width: 100%; margin-top: 14px; color: #101827; background: #9ee7d2; }
+.finder { text-align: center; padding: 28px 20px; }
+.sound-icon { font-size: 30px; color: #9ee7d2; margin-bottom: 10px; }
+.ring { display: block; width: 100%; margin-top: 22px; background: #9ee7d2; color: #101827; padding: 17px; }
+.stop { margin-top: 10px; width: 100%; color: #fff; background: #35445b; }
+.location-card h3 { margin: 0 0 8px; }
+.location-card p { color: #9ee7d2; margin: 0 0 14px; }
+.location-edit { display: flex; gap: 8px; }
+input { min-width: 0; flex: 1; padding: 12px; border-radius: 10px; border: 1px solid #40516b; background: #111c2c; color: white; }
+.location-edit button { background: #35445b; color: white; }
+small { display: block; margin-top: 12px; color: #aeb9ca; line-height: 1.5; }
+.note { color: #8795a9; font-size: 12px; line-height: 1.5; text-align: center; margin: 22px 8px; }
